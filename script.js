@@ -1,35 +1,18 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+const toggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".nav-links");
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', String(isOpen));
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+  nav.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      nav.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
   });
 }
 
-const tabs = document.querySelectorAll('.role-tab');
-const panels = document.querySelectorAll('.role-panel');
-
-tabs.forEach((tab) => {
-  tab.addEventListener('click', () => {
-    const targetId = tab.getAttribute('data-target');
-
-    tabs.forEach((item) => {
-      item.classList.remove('active');
-      item.setAttribute('aria-selected', 'false');
-    });
-
-    panels.forEach((panel) => {
-      panel.classList.remove('active');
-    });
-
-    tab.classList.add('active');
-    tab.setAttribute('aria-selected', 'true');
-
-    const activePanel = document.getElementById(targetId);
-    if (activePanel) {
-      activePanel.classList.add('active');
-    }
-  });
-});
+const year = document.querySelector("#year");
+if (year) year.textContent = new Date().getFullYear();
