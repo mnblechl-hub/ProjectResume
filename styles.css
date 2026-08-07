@@ -16,6 +16,4 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 .ai-learning{padding-top:70px;padding-bottom:70px}.ai-build{margin-top:0;background:#fff}.ai-copy{padding:28px;border-top:1px solid var(--line)}.ai-copy p{color:var(--muted);font-size:16px;max-width:820px;margin:0}.ai-copy p+p{margin-top:16px}
 .ai-build summary,.ai-build .ai-copy{padding-left:42px;padding-right:42px}.ai-build .ai-copy p{max-width:none}
-.expertise-grid>div:nth-last-child(2){transform:translateX(50%)}.expertise-grid>div:last-child{transform:translateX(50%)}
-@media(max-width:900px){.expertise-grid>div:nth-last-child(2),.expertise-grid>div:last-child{transform:none}}
 @media(max-width:680px){.ai-build summary,.ai-build .ai-copy{padding-left:24px;padding-right:24px}}
