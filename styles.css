@@ -23,3 +23,4 @@
 .expertise-grid{grid-template-areas:"transformation software integration" "business product governance" "people data ."}.expertise-grid>div:nth-child(1){grid-area:transformation}.expertise-grid>div:nth-child(2){grid-area:software}.expertise-grid>div:nth-child(3){grid-area:integration}.expertise-grid>div:nth-child(4){grid-area:business}.expertise-grid>div:nth-child(5){grid-area:product}.expertise-grid>div:nth-child(6){grid-area:governance}.expertise-grid>div:nth-child(7){grid-area:people}.expertise-grid>div:nth-child(8){grid-area:data}
 @media(max-width:900px) and (min-width:681px){.expertise-grid{grid-template-areas:"transformation software" "integration governance" "business product" "people data"}}
 @media(max-width:680px){.expertise-grid{grid-template-areas:"transformation" "software" "integration" "governance" "business" "people" "product" "data"}}
+@media(min-width:901px){.metrics{grid-template-columns:repeat(5,1fr)}}
